@@ -1,0 +1,1 @@
+sudo docker run --gpus all -it --rm --security-opt seccomp=unconfined --network host     --volume ~/images/tensorflow:/tensorflow/data      --volume /tmp/argus_socket:/tmp/argus_socket -v /usr/lib/python3.6/dist-packages/tensorrt:/usr/lib/python3.6/dist-packages/tensorrt -v /usr/src/:/usr/src/  nvcr.io/nvidia/tensorflow:21.12-tf1-py3

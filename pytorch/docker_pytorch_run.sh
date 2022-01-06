@@ -1,0 +1,1 @@
+sudo docker run --gpus all -it --rm --security-opt seccomp=unconfined --network host     -v ~/images/pytorch:/pytorch/data -v /usr/lib/python3.6/dist-packages/tensorrt:/usr/lib/python3.6/dist-packages/tensorrt -v /usr/src/:/usr/src/   nvcr.io/nvidia/pytorch:21.12-py3

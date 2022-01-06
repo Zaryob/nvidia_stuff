@@ -1,0 +1,1 @@
+sudo docker run --gpus all -it --rm --security-opt seccomp=unconfined --network host     --volume ~/images/caffe2:/caffe2/data      --volume /tmp/argus_socket:/tmp/argus_socket     nvcr.io/nvidia/caffe2:18.08-py3 /usr/bin/bash
